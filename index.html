@@ -1,0 +1,2269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NCF 사업전략 브리핑 | Night Crow Frontier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0c;
+  --bg-elev: #131316;
+  --bg-card: #16171b;
+  --bg-deep: #0f0f12;
+  --border: #26272d;
+  --border-soft: #1e1f24;
+  --text-primary: #ececef;
+  --text-secondary: #c8c9d0;
+  --text-muted: #8e8f97;
+  --accent: #d4a24c;
+  --accent-bright: #f0c674;
+  --accent-soft: rgba(212, 162, 76, 0.12);
+  --accent-line: rgba(212, 162, 76, 0.3);
+  --danger: #d96a5a;
+  --success: #7ab380;
+  --info: #6c93c2;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 40px; }
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: 'Pretendard', -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* === Layout === */
+.layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* === Sidebar === */
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 48px 24px;
+  border-right: 1px solid var(--border-soft);
+  overflow-y: auto;
+}
+.brand {
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.brand-mark {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.brand-title {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.brand-sub {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+.toc-label {
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.toc { list-style: none; }
+.toc li { margin-bottom: 2px; }
+.toc a {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 9px 10px;
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+}
+.toc a:hover {
+  color: var(--accent-bright);
+  background: var(--accent-soft);
+}
+.toc-num {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 12px;
+  color: var(--text-muted);
+  min-width: 18px;
+}
+
+/* === Main === */
+.main { padding: 64px 64px 120px; max-width: 980px; }
+
+/* === Hero === */
+.hero {
+  margin-bottom: 96px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.hero-eyebrow {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 13px;
+  letter-spacing: 0.3em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+.hero-title em {
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--accent-bright);
+}
+.hero-lead {
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  max-width: 720px;
+}
+.hero-tagline {
+  margin-top: 32px;
+  padding: 24px 28px;
+  border-left: 2px solid var(--accent);
+  background: var(--accent-soft);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+.hero-tagline-en {
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--accent-bright);
+  margin-bottom: 6px;
+  letter-spacing: 0.01em;
+}
+
+/* === Section === */
+.section { margin-bottom: 88px; scroll-margin-top: 40px; }
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.section-num {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+}
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.section-sub {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+.section-intro {
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+  max-width: 760px;
+}
+.subhead {
+  font-size: 13.5px;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  margin-bottom: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* === Cards === */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  padding: 28px;
+  margin-bottom: 16px;
+}
+.card-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card-title::before {
+  content: '';
+  width: 4px;
+  height: 14px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+.card-body { color: var(--text-secondary); font-size: 14.5px; }
+.card-body p + p { margin-top: 12px; }
+
+/* === Grid === */
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+
+/* === Tag === */
+.tag {
+  display: inline-block;
+  padding: 4px 11px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 100px;
+  background: var(--accent-soft);
+  color: var(--accent-bright);
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+.tag.danger { background: rgba(217, 106, 90, 0.12); color: var(--danger); }
+
+/* === DL Tables === */
+.dl-table { display: grid; grid-template-columns: 1fr 2fr; gap: 1px; background: var(--border-soft); border-radius: 6px; overflow: hidden; border: 1px solid var(--border-soft); }
+.dl-table > div { padding: 14px 18px; background: var(--bg-card); font-size: 13.5px; }
+.dl-table > div:nth-child(odd) { color: var(--text-primary); font-weight: 600; background: var(--bg-elev); }
+.dl-table > div:nth-child(even) { color: var(--text-secondary); }
+
+.dl-table-3 { display: grid; grid-template-columns: 1.2fr 1.5fr 1.8fr; gap: 1px; background: var(--border-soft); border-radius: 6px; overflow: hidden; border: 1px solid var(--border-soft); }
+.dl-table-3 > div { padding: 14px 16px; background: var(--bg-card); font-size: 13.5px; line-height: 1.6; }
+.dl-table-3 > .th { background: var(--bg-elev); color: var(--accent-bright); font-weight: 700; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; padding: 11px 16px; }
+.dl-table-3 > .name { color: var(--text-primary); font-weight: 600; }
+.dl-table-3 > .desc { color: var(--text-secondary); }
+.dl-table-3 > .msg { color: var(--accent-bright); font-style: italic; }
+
+/* === KPI Benchmark Table === */
+.kpi-bench {
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.kpi-bench-header {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr 1fr 1.6fr;
+  gap: 1px;
+  background: var(--border-soft);
+}
+.kpi-bench-header > div {
+  background: var(--bg-elev);
+  padding: 11px 14px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+.kpi-bench-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr 1fr 1.6fr;
+  gap: 1px;
+  background: var(--border-soft);
+}
+.kpi-bench-row > div {
+  background: var(--bg-card);
+  padding: 13px 14px;
+  font-size: 13px;
+}
+.kpi-bench-row .country { color: var(--text-primary); font-weight: 600; display: flex; align-items: center; gap: 8px; }
+.kpi-bench-row .nc-rev { color: var(--accent-bright); font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 14px; }
+.kpi-bench-row .ly-rev { color: var(--text-secondary); font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 14px; }
+.kpi-bench-row .dau { color: var(--text-secondary); font-family: 'Bodoni Moda', serif; font-size: 14px; }
+.kpi-bench-row .role { color: var(--text-secondary); font-size: 12.5px; }
+.priority-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 10.5px;
+  font-family: 'Bodoni Moda', serif;
+  letter-spacing: 0.1em;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.pp-1 { background: rgba(212, 162, 76, 0.18); color: var(--accent-bright); }
+.pp-2 { background: rgba(108, 147, 194, 0.15); color: var(--info); }
+.pp-3 { background: rgba(122, 179, 128, 0.12); color: var(--success); }
+.pp-aux { background: rgba(168, 169, 176, 0.1); color: var(--text-secondary); }
+
+.kpi-bench-note {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  padding: 13px 14px;
+  background: var(--bg-deep);
+  line-height: 1.7;
+}
+
+/* === Region Card === */
+.region-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.region-card.priority-1 { border-color: rgba(212, 162, 76, 0.4); }
+.region-priority {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 11px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-bottom-left-radius: 6px;
+  text-transform: uppercase;
+}
+.region-name { font-size: 18px; font-weight: 700; margin-bottom: 5px; }
+.region-role { font-size: 13px; color: var(--text-muted); margin-bottom: 14px; }
+.region-msg {
+  font-size: 13.5px;
+  color: var(--accent-bright);
+  font-style: italic;
+  border-left: 2px solid var(--accent);
+  padding-left: 12px;
+  margin-bottom: 14px;
+  line-height: 1.55;
+}
+.region-kpi {
+  display: flex;
+  gap: 14px;
+  padding: 11px 0;
+  margin-bottom: 12px;
+  border-top: 1px solid var(--border-soft);
+  border-bottom: 1px solid var(--border-soft);
+  flex-wrap: wrap;
+}
+.region-kpi-item {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+.region-kpi-item strong {
+  display: block;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 15px;
+  color: var(--accent-bright);
+  font-weight: 500;
+  margin-top: 3px;
+}
+.region-features { font-size: 13px; color: var(--text-secondary); line-height: 1.65; }
+.region-features strong { color: var(--text-primary); display: block; margin-bottom: 5px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+
+/* === Phase Cards (GTM) === */
+.phase-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+.phase-card:hover { border-color: var(--accent-line); }
+.phase-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
+  padding: 22px 28px;
+  align-items: center;
+  background: linear-gradient(90deg, var(--accent-soft) 0%, transparent 100%);
+  border-bottom: 1px solid var(--border-soft);
+}
+.phase-tag {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 13.5px;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  font-weight: 600;
+  padding: 6px 12px;
+  border: 1px solid var(--accent-line);
+  border-radius: 4px;
+}
+.phase-title-block { flex: 1; }
+.phase-name {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+.phase-goal-line {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.phase-date {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 14.5px;
+  color: var(--accent-bright);
+  letter-spacing: 0.08em;
+}
+
+.phase-body { padding: 24px 28px; }
+.phase-body-label {
+  font-size: 11.5px;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.task-grid.cols-1 { grid-template-columns: 1fr; }
+.task-item {
+  padding: 14px 16px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  border-left: 2px solid var(--accent);
+}
+.task-item-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+}
+.task-item-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.note-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border-soft);
+}
+.note-list li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 7px;
+  line-height: 1.6;
+}
+.note-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+}
+
+/* === KPI Block === */
+.kpi-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--border-soft); border-radius: 8px; overflow: hidden; }
+.kpi-cell { padding: 22px 24px; background: var(--bg-card); border-right: 1px solid var(--border-soft); }
+.kpi-cell:last-child { border-right: none; }
+.kpi-label { font-size: 12px; letter-spacing: 0.08em; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px; }
+.kpi-value { font-family: 'Bodoni Moda', serif; font-size: 30px; font-weight: 600; color: var(--accent-bright); letter-spacing: -0.01em; }
+.kpi-unit { font-size: 12.5px; color: var(--text-muted); margin-top: 5px; }
+
+/* === List === */
+.bullet-list { list-style: none; padding: 0; }
+.bullet-list li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 9px;
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+.bullet-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 6px;
+  height: 1px;
+  background: var(--accent);
+}
+
+/* === Quote === */
+.quote-block {
+  margin: 32px 0;
+  padding: 32px 36px;
+  background: linear-gradient(135deg, var(--bg-elev) 0%, var(--bg-card) 100%);
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  position: relative;
+}
+.quote-block::before {
+  content: '"';
+  position: absolute;
+  left: 16px;
+  top: 0;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 80px;
+  color: var(--accent);
+  opacity: 0.25;
+  line-height: 1;
+}
+.quote-en {
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  font-size: 23px;
+  color: var(--accent-bright);
+  margin-bottom: 8px;
+  letter-spacing: 0.01em;
+}
+.quote-ko {
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* === Risk === */
+.risk-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.4fr;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-soft);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+.risk-item:last-child { border-bottom: none; }
+.risk-name { color: var(--text-primary); font-weight: 600; }
+.risk-impact { color: var(--danger); }
+.risk-action { color: var(--text-secondary); }
+
+/* === Footer === */
+.footer {
+  margin-top: 80px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border-soft);
+  font-size: 12.5px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* === Scenario Cards === */
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.scenario-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  padding: 22px;
+  position: relative;
+  overflow: hidden;
+}
+.scenario-card.normal {
+  border-color: var(--accent);
+  background: linear-gradient(135deg, var(--accent-soft) 0%, var(--bg-card) 60%);
+}
+.scenario-card.normal::after {
+  content: 'TARGET';
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  background: var(--bg-deep);
+  padding: 4px 9px;
+  border-radius: 3px;
+}
+.scenario-label {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 12.5px;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.scenario-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+.scenario-total {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--accent-bright);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+.scenario-total-unit {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  letter-spacing: 0.03em;
+}
+.scenario-metrics {
+  border-top: 1px solid var(--border-soft);
+  padding-top: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 14px;
+}
+.scenario-metric {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.scenario-metric strong {
+  display: block;
+  color: var(--text-primary);
+  font-family: 'Bodoni Moda', serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 3px;
+}
+
+/* === Comparison Table (NC vs NCFT) === */
+.compare-table {
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.compare-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 0.9fr;
+  gap: 1px;
+  background: var(--border-soft);
+}
+.compare-row > div {
+  background: var(--bg-card);
+  padding: 13px 16px;
+  font-size: 13.5px;
+}
+.compare-row.head > div {
+  background: var(--bg-elev);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  text-transform: uppercase;
+  padding: 12px 16px;
+}
+.compare-row .metric { color: var(--text-primary); font-weight: 600; }
+.compare-row .from { color: var(--text-secondary); font-family: 'Bodoni Moda', serif; font-size: 14px; }
+.compare-row .to { color: var(--accent-bright); font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 14px; }
+.compare-row .delta { font-family: 'Bodoni Moda', serif; font-size: 13.5px; font-weight: 500; }
+.compare-row .delta.down { color: var(--danger); }
+.compare-row .delta.up { color: var(--success); }
+.compare-row .delta.flat { color: var(--text-muted); }
+
+/* === ARPPU Bars === */
+.arppu-chart {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  padding: 24px 28px;
+  margin-bottom: 16px;
+}
+.arppu-bar {
+  display: grid;
+  grid-template-columns: 150px 1fr 100px;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 14px;
+  font-size: 13.5px;
+}
+.arppu-bar:last-child { margin-bottom: 0; }
+.arppu-name { color: var(--text-secondary); font-weight: 500; }
+.arppu-name.highlight { color: var(--accent-bright); font-weight: 600; }
+.arppu-track {
+  height: 26px;
+  background: var(--bg-deep);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+.arppu-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-bright) 100%);
+  border-radius: 4px;
+  transition: width 0.6s ease;
+}
+.arppu-fill.muted {
+  background: var(--text-muted);
+  opacity: 0.5;
+}
+.arppu-fill.scenario { background: linear-gradient(90deg, #8a6e34 0%, var(--accent) 100%); }
+.arppu-value {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 14.5px;
+  color: var(--text-primary);
+  text-align: right;
+  font-weight: 500;
+}
+.arppu-value.highlight { color: var(--accent-bright); }
+
+/* === BM Impact Card === */
+.bm-impact-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.4fr;
+  gap: 1px;
+  background: var(--border-soft);
+}
+.bm-impact-row > div {
+  background: var(--bg-card);
+  padding: 14px 16px;
+  font-size: 13.5px;
+}
+.bm-impact-row.head > div {
+  background: var(--bg-elev);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  text-transform: uppercase;
+  padding: 12px 16px;
+}
+.bm-impact-row .item-name { color: var(--text-primary); font-weight: 600; }
+.bm-impact-row .item-impact { color: var(--text-secondary); }
+.bm-impact-row .item-kpi { color: var(--accent-bright); font-style: italic; font-size: 13px; font-weight: 500; }
+.bm-impact-wrap { border: 1px solid var(--border-soft); border-radius: 8px; overflow: hidden; }
+
+/* === Country Target Table === */
+.country-target {
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.country-target-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  gap: 1px;
+  background: var(--border-soft);
+}
+.country-target-row > div {
+  background: var(--bg-card);
+  padding: 13px 16px;
+  font-size: 13.5px;
+}
+.country-target-row.head > div {
+  background: var(--bg-elev);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  text-transform: uppercase;
+  padding: 12px 16px;
+}
+.country-target-row.total > div {
+  background: var(--accent-soft);
+  font-weight: 700;
+}
+.country-target-row .ct-country { color: var(--text-primary); font-weight: 600; }
+.country-target-row .ct-from { color: var(--text-secondary); font-family: 'Bodoni Moda', serif; font-size: 14px; }
+.country-target-row .ct-to { color: var(--accent-bright); font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 14px; }
+.country-target-row .ct-logic { color: var(--text-secondary); font-size: 12.5px; line-height: 1.55; }
+
+/* === Final Conclusion === */
+.conclusion-box {
+  margin-top: 28px;
+  padding: 28px 32px;
+  background: linear-gradient(135deg, var(--accent-soft) 0%, var(--bg-card) 100%);
+  border: 1px solid var(--accent-line);
+  border-radius: 8px;
+}
+.conclusion-label {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.conclusion-text {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+.conclusion-text strong {
+  color: var(--accent-bright);
+}
+
+/* === PDF Reference Block === */
+.pdf-ref-card {
+  margin-top: 32px;
+  padding: 22px 28px;
+  background: var(--bg-elev);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.pdf-ref-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: var(--accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.pdf-ref-text { flex: 1; min-width: 200px; }
+.pdf-ref-text-title { font-size: 14.5px; font-weight: 600; color: var(--text-primary); margin-bottom: 3px; }
+.pdf-ref-text-sub { font-size: 13px; color: var(--text-muted); }
+.pdf-ref-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.pdf-btn {
+  padding: 9px 14px;
+  border-radius: 5px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  text-decoration: none;
+}
+.pdf-btn:hover { background: var(--accent-soft); color: var(--accent-bright); border-color: var(--accent-line); }
+.pdf-btn.primary { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+.pdf-btn.primary:hover { background: var(--accent-bright); color: var(--bg); }
+
+/* Sidebar PDF launch button */
+.pdf-launch-btn {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 11px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text-secondary);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+.pdf-launch-btn:hover {
+  background: var(--accent-soft);
+  color: var(--accent-bright);
+  border-color: var(--accent-line);
+}
+
+/* === PDF Modal === */
+.pdf-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  backdrop-filter: blur(4px);
+}
+.pdf-modal.open { display: flex; }
+.pdf-modal-content {
+  width: 100%;
+  max-width: 1100px;
+  height: 90vh;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.pdf-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 22px;
+  border-bottom: 1px solid var(--border-soft);
+  background: var(--bg-elev);
+  flex-shrink: 0;
+}
+.pdf-modal-title { font-size: 14.5px; font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 10px; }
+.pdf-modal-title-mark { font-family: 'Bodoni Moda', serif; font-size: 11px; letter-spacing: 0.2em; color: var(--accent); }
+.pdf-modal-actions { display: flex; gap: 8px; }
+.pdf-modal-iframe {
+  flex: 1;
+  border: 0;
+  width: 100%;
+  background: #2a2b30;
+}
+.pdf-modal-close {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 16px;
+  transition: all 0.15s ease;
+}
+.pdf-modal-close:hover { background: var(--danger); color: white; border-color: var(--danger); }
+
+@media (max-width: 1024px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+  .main { padding: 40px 28px 80px; }
+  .hero-title { font-size: 34px; }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .kpi-row { grid-template-columns: 1fr; }
+  .kpi-cell { border-right: none; border-bottom: 1px solid var(--border-soft); }
+  .kpi-cell:last-child { border-bottom: none; }
+  .dl-table-3 { grid-template-columns: 1fr; }
+  .risk-item { grid-template-columns: 1fr; gap: 4px; }
+  .kpi-bench-header, .kpi-bench-row { grid-template-columns: 1fr 1fr 1fr; }
+  .kpi-bench-header > div:nth-child(4), .kpi-bench-header > div:nth-child(5),
+  .kpi-bench-row > div:nth-child(4), .kpi-bench-row > div:nth-child(5) { display: none; }
+  .phase-header { grid-template-columns: 1fr; gap: 8px; }
+  .task-grid { grid-template-columns: 1fr; }
+  .scenario-grid { grid-template-columns: 1fr; }
+  .compare-row, .compare-row.head { grid-template-columns: 1.5fr 1fr 1fr 0.8fr; }
+  .compare-row > div { font-size: 11.5px; padding: 10px 10px; }
+  .compare-row.head > div { padding: 9px 10px; }
+  .arppu-bar { grid-template-columns: 110px 1fr 80px; gap: 10px; }
+  .country-target-row, .country-target-row.head { grid-template-columns: 0.9fr 1fr 1fr; }
+  .country-target-row > div:nth-child(4), .country-target-row.head > div:nth-child(4) { display: none; }
+  .bm-impact-row { grid-template-columns: 1fr; }
+  .pdf-modal { padding: 8px; }
+  .pdf-modal-content { height: 95vh; }
+}
+</style>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">Night Crow Frontier</div>
+      <div class="brand-title">사업전략</div>
+      <div class="brand-sub">Business Strategy v1.0</div>
+    </div>
+
+    <div class="toc-label">CONTENTS</div>
+    <ul class="toc">
+      <li><a href="#s01"><span class="toc-num">01</span> 시장 포지셔닝</a></li>
+      <li><a href="#s02"><span class="toc-num">02</span> 글로벌 시장 분석</a></li>
+      <li><a href="#s03"><span class="toc-num">03</span> 제품 차별화</a></li>
+      <li><a href="#s04"><span class="toc-num">04</span> 핵심 메시지</a></li>
+      <li><a href="#s05"><span class="toc-num">05</span> 타깃 시장 전략</a></li>
+      <li><a href="#s06"><span class="toc-num">06</span> GTM 전략</a></li>
+      <li><a href="#s07"><span class="toc-num">07</span> BM 전략</a></li>
+      <li><a href="#s08"><span class="toc-num">08</span> 토크노믹스</a></li>
+      <li><a href="#s09"><span class="toc-num">09</span> 콘텐츠 운영</a></li>
+      <li><a href="#s10"><span class="toc-num">10</span> 리스크 & 대응</a></li>
+      <li><a href="#s11"><span class="toc-num">11</span> 매출 시뮬레이션</a></li>
+      <li><a href="#s12"><span class="toc-num">12</span> 최종 요약</a></li>
+    </ul>
+
+    <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border-soft);">
+      <div class="toc-label" style="margin-bottom: 10px;">REFERENCE</div>
+      <button class="pdf-launch-btn" onclick="openPdfModal()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:6px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+        KPI 원본 PDF
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-eyebrow">NCF Business Strategy</div>
+      <h1 class="hero-title">
+        24시간 성장 가능한<br>
+        <em>선택형 전쟁</em> MMORPG
+      </h1>
+      <p class="hero-lead">
+        나이트 크로우 프론티어는 나이트크로우1의 전쟁·글라이더·Web3 경제를 계승하되,
+        방치모드·보장형 PvE·선택형 PvP·인게임 탈것·무기외형 천장·AI 보조·WEMIX 직접 거래를 통해
+        성장 부담과 토크노믹스 진입 장벽을 낮춘 글로벌 MMORPG로 론칭합니다.
+      </p>
+      <div class="hero-tagline">
+        <div class="hero-tagline-en">Grow Anytime. Fight by Choice. Own What You Build.</div>
+        <div>언제든 성장하고, 원할 때 전쟁하며, 내가 만든 가치를 소유하라.</div>
+      </div>
+    </section>
+
+    <!-- 01. 시장 포지셔닝 -->
+    <section class="section" id="s01">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2 class="section-title">시장 포지셔닝</h2>
+        <span class="section-sub">Market Positioning</span>
+      </div>
+      <p class="section-intro">
+        프론티어는 "Web3 MMORPG"가 아니라 <strong>"24시간 성장 가능한 선택형 전쟁 MMORPG"</strong>로 포지셔닝합니다.
+        한국과 글로벌에 메시지를 이원화하는 것이 핵심입니다.
+      </p>
+
+      <div class="quote-block">
+        <div class="quote-en">24H Growth MMORPG with Optional War and Direct WEMIX Trading</div>
+        <div class="quote-ko">24시간 성장하고, 원할 때 전쟁하며, 획득한 가치를 직접 거래하는 글로벌 MMORPG</div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">글로벌 시장 메시지</div>
+          <div class="card-body">
+            <p>WEMIX 직접 거래 + 직관적 토크노믹스를 추가한 풀버전 메시지로 운영합니다. SEA, 남미, 대만/홍콩 등 Web3 친화 시장이 타깃입니다.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">한국 시장 메시지</div>
+          <div class="card-body">
+            <p>WEMIX·NFT·P2E 메시지를 전면화하지 않습니다. 방치모드, 보장형 PvE, 선택형 PvP, 인게임 탈것, 무기외형 천장, AI 보조 콘텐츠 중심으로 커뮤니케이션합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. 글로벌 시장 분석 -->
+    <section class="section" id="s02">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2 class="section-title">글로벌 시장 분석</h2>
+        <span class="section-sub">Market Analysis</span>
+      </div>
+      <p class="section-intro">
+        글로벌 게임 시장은 성장하지만 경쟁 강도는 높아지고 있습니다. 크로스플랫폼·하이브리드 BM(상품판매 및 거래 수수료, 콘솔 판매금액 등)이 핵심이 되고 있습니다.
+      </p>
+
+      <div class="kpi-row" style="margin-bottom: 24px;">
+        <div class="kpi-cell">
+          <div class="kpi-label">2025 글로벌 게임 시장</div>
+          <div class="kpi-value">$188.8B</div>
+          <div class="kpi-unit">Newzoo 전망</div>
+        </div>
+        <div class="kpi-cell">
+          <div class="kpi-label">모바일 게임 비중</div>
+          <div class="kpi-value">55%</div>
+          <div class="kpi-unit">$103B</div>
+        </div>
+        <div class="kpi-cell">
+          <div class="kpi-label">MMORPG 시장 (2026)</div>
+          <div class="kpi-value">$31.0B</div>
+          <div class="kpi-unit">2031 $51.3B 전망</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">핵심 인사이트 3가지</div>
+        <div class="card-body">
+          <ul class="bullet-list">
+            <li><strong>크로스플랫폼 인식이 필수</strong> — 모바일 MMORPG가 아닌 PC/모바일 크로스플랫폼 MMORPG로 포지셔닝해야 합니다.</li>
+            <li><strong>P2E보다 게임성 우선</strong> — 글로벌 유저는 복잡한 P2E가 아니라 재미있는 게임 위에 자연스럽게 붙는 소유·거래 구조를 원합니다.</li>
+            <li><strong>Web3는 기회지만 메시지 리스크</strong> — Google Play 정책상 Earn 강조는 금지. <strong>Own/Trade 중심</strong>으로 메시지를 전환해야 합니다.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. 제품 차별화 -->
+    <section class="section" id="s03">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2 class="section-title">제품 차별화</h2>
+        <span class="section-sub">Product Differentiation</span>
+      </div>
+      <p class="section-intro">
+        프론티어는 기존 MMORPG 페인포인트를 8가지 공통 요소 + 4가지 글로벌 요소로 해결합니다.
+      </p>
+
+      <div class="subhead">공통 차별화 요소</div>
+      <div class="dl-table-3" style="margin-bottom: 28px;">
+        <div class="th">차별화 요소</div>
+        <div class="th">사업적 의미</div>
+        <div class="th">핵심 메시지</div>
+
+        <div class="name">방치모드 지원</div>
+        <div class="desc">시간 부족 유저의 성장 손실 완화</div>
+        <div class="msg">24시간 성장 가능한 MMORPG</div>
+
+        <div class="name">저사양 디바이스 최적화</div>
+        <div class="desc">동남아·남미·한국 중저가 단말 수용</div>
+        <div class="msg">더 많은 기기에서 즐기는 월드와이드</div>
+
+        <div class="name">보장형 PvE</div>
+        <div class="desc">강제 PvP 없이 안정 성장 가능</div>
+        <div class="msg">성장은 안전하게</div>
+
+        <div class="name">선택형 PvP</div>
+        <div class="desc">전쟁 피로 감소 + 하드코어 수용</div>
+        <div class="msg">전쟁은 원할 때만</div>
+
+        <div class="name">인게임 탈것 획득</div>
+        <div class="desc">탈것 BM 피로 제거</div>
+        <div class="msg">탈것은 뽑기가 아니라 모험의 보상</div>
+
+        <div class="name">글라이더 + 바람길</div>
+        <div class="desc">입체적 이동·전략적 합류 제공</div>
+        <div class="msg">더 입체적인 전장</div>
+
+        <div class="name">무기외형 천장 시스템</div>
+        <div class="desc">주요 BM 허탈감 완화</div>
+        <div class="msg">운이 나빠도 목표는 보인다</div>
+
+        <div class="name">AI 보조</div>
+        <div class="desc">파티/길드 결원 보완</div>
+        <div class="msg">항상 도전 가능한 협동 콘텐츠</div>
+      </div>
+
+      <div class="subhead">글로벌 차별화 요소</div>
+      <div class="dl-table-3">
+        <div class="th">요소</div>
+        <div class="th">사업적 의미</div>
+        <div class="th">핵심 메시지</div>
+
+        <div class="name">웹 거래소 NFT 거래</div>
+        <div class="desc">앱마켓 제약 우회 + Web3 접근성</div>
+        <div class="msg">게임 밖에서도 이어지는 가치</div>
+
+        <div class="name">WEMIX 직접 거래</div>
+        <div class="desc">별도 게임 토큰 없는 단순 구조</div>
+        <div class="msg">No Extra Game Token Complexity</div>
+
+        <div class="name">직관적 토크노믹스</div>
+        <div class="desc">일반 + Web3 유저 모두 수용</div>
+        <div class="msg">더 단순하고 투명한 글로벌 경제</div>
+
+        <div class="name">아이템 중심 경제</div>
+        <div class="desc">캐릭터 성장과 거래 가치 연결</div>
+        <div class="msg">플레이한 만큼 쌓이는 소유 가치</div>
+      </div>
+    </section>
+
+    <!-- 04. 핵심 메시지 -->
+    <section class="section" id="s04">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2 class="section-title">핵심 메시지 체계</h2>
+        <span class="section-sub">Key Messages</span>
+      </div>
+      <p class="section-intro">
+        글로벌과 한국 메인 메시지를 분리하고, 8개 서브 메시지로 기능별 강조점을 운영합니다.
+      </p>
+
+      <div class="grid-2" style="margin-bottom: 28px;">
+        <div class="card">
+          <div class="card-title">글로벌 메인</div>
+          <div class="card-body">
+            <p style="font-family:'Bodoni Moda',serif; font-style:italic; font-size:18px; color:var(--accent-bright); line-height:1.4;">Grow Anytime.<br>Fight by Choice.<br>Own What You Build.</p>
+            <p style="margin-top:12px;">언제든 성장하고, 원할 때 전쟁하며, 내가 만든 가치를 소유하라.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">한국 메인</div>
+          <div class="card-body">
+            <p style="font-size:17px; color:var(--text-primary); line-height:1.5; font-weight:600;">24시간 성장하고,<br>원하는 순간 전쟁하라.</p>
+            <p style="margin-top:12px;">부담은 줄이고, 전장은 더 전략적으로.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subhead">서브 메시지 8종</div>
+      <div style="margin-bottom: 28px;">
+        <span class="tag">24H Growth MMORPG</span>
+        <span class="tag">Safe PVE Growth, Optional PVP</span>
+        <span class="tag">Earn Mounts Through Gameplay</span>
+        <span class="tag">Glide Beyond the Battlefield</span>
+        <span class="tag">Guaranteed Progress, Less Frustration</span>
+        <span class="tag">AI-assisted Party & Guild Play</span>
+        <span class="tag">Direct WEMIX Item Trading</span>
+        <span class="tag">No Extra Game Token Complexity</span>
+      </div>
+
+      <div class="subhead" style="color:var(--danger);">⚠ 피해야 할 메시지</div>
+      <div>
+        <span class="tag danger">"돈 버는 게임"</span>
+        <span class="tag danger">"P2E MMORPG"</span>
+        <span class="tag danger">"No P2W"</span>
+        <span class="tag danger">"완전 공정 경쟁"</span>
+        <span class="tag danger">"NFT가 핵심인 게임"</span>
+        <span class="tag danger">"24시간 자동 무한 성장"</span>
+      </div>
+    </section>
+
+    <!-- 05. 타깃 시장 전략 -->
+    <section class="section" id="s05">
+      <div class="section-head">
+        <span class="section-num">05</span>
+        <h2 class="section-title">타깃 시장 전략</h2>
+        <span class="section-sub">Target Markets</span>
+      </div>
+      <p class="section-intro">
+        타깃 시장 선정의 근거는 <strong>NC_GL과 LY_GL의 실제 30일 KPI</strong>입니다.
+        실제 매출과 DAU가 검증된 국가 중심으로 우선순위를 구성했습니다.
+      </p>
+
+      <!-- KPI Benchmark Table -->
+      <div class="subhead">기존 서비스 KPI 기반 국가별 선정 근거</div>
+      <div class="kpi-bench" style="margin-bottom: 28px;">
+        <div class="kpi-bench-header">
+          <div>국가</div>
+          <div>NC_GL+한국 매출</div>
+          <div>NC_GL+한국 DAU</div>
+          <div>LY_GL 매출</div>
+          <div>NCF 역할 정의</div>
+        </div>
+
+        <div class="kpi-bench-row">
+          <div class="country">한국 <span class="priority-pill pp-1">P1</span></div>
+          <div class="nc-rev">495.0억</div>
+          <div class="dau">242,273</div>
+          <div class="ly-rev">—</div>
+          <div class="role">안정 매출 Core (카니발 강하게 반영)</div>
+        </div>
+        <div class="kpi-bench-row">
+          <div class="country">태국 <span class="priority-pill pp-1">P1</span></div>
+          <div class="nc-rev">240.8억</div>
+          <div class="dau">46,952</div>
+          <div class="ly-rev">27.2억</div>
+          <div class="role">고과금 + 거래 Core</div>
+        </div>
+        <div class="kpi-bench-row">
+          <div class="country">대만 <span class="priority-pill pp-1">P1</span></div>
+          <div class="nc-rev">138.7억</div>
+          <div class="dau">47,557</div>
+          <div class="ly-rev">9.4억</div>
+          <div class="role">고ARPU + 거래 Core</div>
+        </div>
+        <div class="kpi-bench-row">
+          <div class="country">필리핀 <span class="priority-pill pp-1">P1</span></div>
+          <div class="nc-rev">95.0억</div>
+          <div class="dau">96,139</div>
+          <div class="ly-rev">48.3억</div>
+          <div class="role">DAU + 거래 Core</div>
+        </div>
+        <div class="kpi-bench-row">
+          <div class="country">브라질 <span class="priority-pill pp-1">P1</span></div>
+          <div class="nc-rev">61.3억</div>
+          <div class="dau">37,560</div>
+          <div class="ly-rev">23.8억</div>
+          <div class="role">Web 거래 성장 시장</div>
+        </div>
+        <div class="kpi-bench-row">
+          <div class="country">홍콩 <span class="priority-pill pp-aux">보조</span></div>
+          <div class="nc-rev">58.3억</div>
+          <div class="dau">155,330*</div>
+          <div class="ly-rev">11.4억</div>
+          <div class="role">우회 결제/보조 매출</div>
+        </div>
+        <div class="kpi-bench-row">
+          <div class="country">미국 <span class="priority-pill pp-2">P2</span></div>
+          <div class="nc-rev">46.7억</div>
+          <div class="dau">30,267</div>
+          <div class="ly-rev">12.7억</div>
+          <div class="role">ARPU 보완</div>
+        </div>
+        <div class="kpi-bench-row">
+          <div class="country">인도네시아 <span class="priority-pill pp-aux">롱테일</span></div>
+          <div class="nc-rev">31.5억</div>
+          <div class="dau">23,897</div>
+          <div class="ly-rev">12.4억</div>
+          <div class="role">DAU Volume</div>
+        </div>
+        <div class="kpi-bench-note">
+          NC_GL 30일 매출: 2024-03-12 ~ 2024-04-10 합산 · LY_GL 30일 매출: 2025-10-28 ~ 2025-11-26 합산<br>
+          한국은 NC_KR 30일 매출을 단일 국가로 편입 · LY_GL은 한국 서비스 데이터 없음<br>
+          *홍콩 DAU는 작업장/우회 IP 노이즈 포함 추정 — 실제 유저 DAU로 그대로 해석하지 않음
+        </div>
+      </div>
+
+      <!-- Region Cards -->
+      <div class="subhead">권역별 전략 카드</div>
+      <div class="grid-2">
+        <div class="region-card priority-1">
+          <div class="region-priority">1순위</div>
+          <div class="region-name">동남아 · 대만 · 홍콩 · 남미</div>
+          <div class="region-role">기존 NC_GL 성과 재점화 권역</div>
+          <div class="region-msg">24시간 성장 + 선택형 전쟁 + WEMIX 직접 거래</div>
+          <div class="region-kpi">
+            <div class="region-kpi-item">NC_GL 핵심 합산 <strong>약 535억</strong></div>
+            <div class="region-kpi-item">합산 평균 DAU <strong>383K+</strong></div>
+          </div>
+          <div class="region-features">
+            <strong>선정 근거</strong>
+            태국·대만·필리핀·브라질 모두 NC_GL/LY_GL에서 실매출 확인. 170개국 NC_GL 서비스 중 핵심 과금 국가 그룹.
+            <br><br>
+            <strong>강조 기능</strong>
+            방치모드 · 저사양 최적화 · 보장형 PvE · 선택형 PvP · 인게임 탈것 · 무기외형 천장 · WEMIX 직접 거래
+          </div>
+        </div>
+
+        <div class="region-card priority-1">
+          <div class="region-priority">1순위</div>
+          <div class="region-name">한국</div>
+          <div class="region-role">Web3 없는 게임성 검증 시장</div>
+          <div class="region-msg">성장은 더 편하게, 전쟁은 더 전략적으로</div>
+          <div class="region-kpi">
+            <div class="region-kpi-item">NC_KR 30일 매출 <strong>약 495억</strong></div>
+            <div class="region-kpi-item">NC_KR 평균 DAU <strong>242K</strong></div>
+          </div>
+          <div class="region-features">
+            <strong>선정 근거</strong>
+            MMORPG 결제 강도 최상위. 단일 국가 매출 1위. 단, NC_KR 카니발라이제이션을 가장 강하게 반영해야 함.
+            <br><br>
+            <strong>강조 기능 (Web3 메시지 제외)</strong>
+            방치모드 · 보장형 PvE · 선택형 PvP · 인게임 탈것 · 무기외형 천장 · AI 보조 · 글라이더/바람길 · 길드전/성물전/크루세이드
+          </div>
+        </div>
+
+        <div class="region-card">
+          <div class="region-priority">2순위</div>
+          <div class="region-name">북미 · 유럽</div>
+          <div class="region-role">PC MMORPG · 고ARPU 잠재력</div>
+          <div class="region-msg">Optional PVP, Guaranteed PVE Progress, Cross-platform MMO Warfare</div>
+          <div class="region-kpi">
+            <div class="region-kpi-item">NC_GL 미국 매출 <strong>46.7억</strong></div>
+            <div class="region-kpi-item">미국 평균 DAU <strong>30K</strong></div>
+          </div>
+          <div class="region-features">
+            <strong>선정 근거</strong>
+            미국 ARPU 수준은 양호하나 진입 난도와 경쟁 강도가 높아 보완 매출 중심. P2W·Web3 거부감을 고려해 메시지 전환 필요.
+            <br><br>
+            <strong>강조 기능</strong>
+            PC/모바일 크로스플랫폼 · 선택형 PvP · 보장형 PvE · 글라이더/바람길 · AI 보조 · BM 투명성 · Web3는 후순위
+          </div>
+        </div>
+
+        <div class="region-card">
+          <div class="region-priority">3순위</div>
+          <div class="region-name">MENA · 터키</div>
+          <div class="region-role">길드전·경쟁형 MMORPG 수요</div>
+          <div class="region-msg">Build your guild. Grow anytime. Conquer the frontier.</div>
+          <div class="region-kpi">
+            <div class="region-kpi-item">기존 서비스 직접 데이터 <strong>제한적</strong></div>
+            <div class="region-kpi-item">결제력·로컬라이징 <strong>리스크 존재</strong></div>
+          </div>
+          <div class="region-features">
+            <strong>선정 근거</strong>
+            기존 NC 서비스에서 직접 매출 검증 데이터는 부족하나, 모바일 MMORPG·길드 경쟁 수요가 확인되는 시장. 1순위보다 보수적으로 운영.
+            <br><br>
+            <strong>강조 기능</strong>
+            길드전 · 성물전 · 크루세이드 · 시즌 경쟁 · 방치 성장 · 저사양 디바이스 최적화
+          </div>
+        </div>
+
+        <div class="region-card" style="grid-column: 1 / -1;">
+          <div class="region-priority">선택 시장</div>
+          <div class="region-name">일본</div>
+          <div class="region-role">대규모 UA가 아닌 현지화·메시지 검증 시장</div>
+          <div class="region-msg">自分のペースで成長し、選んだ時だけ戦うMMORPG</div>
+          <div class="region-kpi">
+            <div class="region-kpi-item">매출 상위권 <strong>내수 IP·수집형 RPG 강세</strong></div>
+            <div class="region-kpi-item">FFXIV급 성공 <strong>강력한 IP·장기 라이브 전제</strong></div>
+          </div>
+          <div class="region-features">
+            <strong>선정 근거</strong>
+            일본은 매출 규모는 크지만 자국 IP·애니풍 RPG·캐릭터 수집형이 상위권을 차지하므로, 프론티어의 직접 성공 근거로 보기 제한적. 대규모 UA 선투입 대신 현지화 품질·메시지 반응을 검증하는 시장으로 접근.
+            <br><br>
+            <strong>강조 기능</strong>
+            솔로 PvE · 방치모드 · 수집 성장 · 외형/아바타 · 차원의 탑 · 월영의 성소 · 인게임 탈것 · 선택형 PvP
+            <br><br>
+            <strong style="color:var(--danger);">후순위</strong>
+            WEMIX 직접 거래 · NFT 거래 · 하드코어 길드전 · PvP 중심 메시지
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. GTM -->
+    <section class="section" id="s06">
+      <div class="section-head">
+        <span class="section-num">06</span>
+        <h2 class="section-title">GTM 전략</h2>
+        <span class="section-sub">Go-to-Market · Phase 0–5</span>
+      </div>
+      <p class="section-intro">
+        2026년 5월부터 11월까지 6단계로 전개합니다.
+        포지셔닝 → 시장반응 검증 → 차별화 딥다이브 → 사전등록 → 크리에이터 프리뷰 → 런칭 전환.
+      </p>
+
+      <!-- Phase 0 -->
+      <div class="phase-card">
+        <div class="phase-header">
+          <span class="phase-tag">PHASE 0</span>
+          <div class="phase-title-block">
+            <div class="phase-name">포지셔닝·메시지 확정</div>
+            <div class="phase-goal-line">"또 하나의 Web3 MMORPG"가 아닌, 24시간 성장형 선택 전쟁 MMORPG로 인식시키는 기반 마련</div>
+          </div>
+          <div class="phase-date">2026.05</div>
+        </div>
+        <div class="phase-body">
+          <div class="phase-body-label">실행 과제 5종</div>
+          <div class="task-grid">
+            <div class="task-item">
+              <div class="task-item-name">포지셔닝 확정</div>
+              <div class="task-item-desc">24H Growth + Optional War + Direct WEMIX Trading 3축 메시지 결정</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">메시지 가이드 제작</div>
+              <div class="task-item-desc">Web3 수익 강조 금지, P2W 단정 표현 금지 등 표현 금지·권장 가이드</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">Feature Proof Pack 제작</div>
+              <div class="task-item-desc">방치모드·PvE 성장·바람길·탈것 획득·천장·AI 보조 기능별 짧은 영상 패키지</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">BM Trust Charter 제작</div>
+              <div class="task-item-desc">탈것 BM 제거, 무기외형 천장, 확정 성장 루트, PvE 성장 보장을 공식 문서화</div>
+            </div>
+            <div class="task-item" style="grid-column: 1 / -1;">
+              <div class="task-item-name">지역별 메시지 매트릭스</div>
+              <div class="task-item-desc">SEA/남미는 WEMIX 거래, 일본은 PvE/수집, 북미·유럽은 Optional PvP 중심으로 권역별 메시지 분기</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 1 -->
+      <div class="phase-card">
+        <div class="phase-header">
+          <span class="phase-tag">PHASE 1</span>
+          <div class="phase-title-block">
+            <div class="phase-name">시장 반응 검증</div>
+            <div class="phase-goal-line">티저·광고·설문을 통해 시장의 초기 반응과 권역별 수요 시그널 확인</div>
+          </div>
+          <div class="phase-date">2026.08</div>
+        </div>
+        <div class="phase-body">
+          <div class="phase-body-label">실행 과제 5종</div>
+          <div class="task-grid">
+            <div class="task-item">
+              <div class="task-item-name">티저 랜딩페이지 오픈</div>
+              <div class="task-item-desc">세계관, 24H Growth, 선택형 전쟁, WEMIX 거래 구조를 단일 페이지로 압축 소개</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">광고 소재 A/B 테스트</div>
+              <div class="task-item-desc">방치모드 / PvE 성장 / 글라이더 바람길 / 탈것 획득 / WEMIX 거래 5종 소재 성과 비교</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">설문 기반 수요 검증</div>
+              <div class="task-item-desc">PvE / PvP / Web3 / 방치모드 / 길드전 선호도 조사로 권역별 페르소나 구체화</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">지역별 관심 등록</div>
+              <div class="task-item-desc">국가별 CPA(획득 단가), CVR(전환율), 영상 완주율을 KPI로 추적</div>
+            </div>
+            <div class="task-item" style="grid-column: 1 / -1;">
+              <div class="task-item-name">커뮤니티 채널 오픈</div>
+              <div class="task-item-desc">Discord(글로벌 허브), Facebook(SEA·남미), X(영어권), 지역별 로컬 채널 동시 가동</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 2 -->
+      <div class="phase-card">
+        <div class="phase-header">
+          <span class="phase-tag">PHASE 2</span>
+          <div class="phase-title-block">
+            <div class="phase-name">차별화 요소 딥다이브 캠페인</div>
+            <div class="phase-goal-line">8회차 개발자 노트로 기존 MMORPG 페인포인트 해결 방식을 기능별로 설명</div>
+          </div>
+          <div class="phase-date">2026.09</div>
+        </div>
+        <div class="phase-body">
+          <div class="phase-body-label">개발자 노트 8회차 시리즈</div>
+          <div class="task-grid">
+            <div class="task-item">
+              <div class="task-item-name">1회 · 24시간 성장 구조</div>
+              <div class="task-item-desc">방치모드로 접속하지 않는 시간에도 기본 성장 보장</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">2회 · PvE 보장 성장</div>
+              <div class="task-item-desc">성장 재료를 PvP 부담 없이 안정적으로 획득</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">3회 · 선택형 PvP</div>
+              <div class="task-item-desc">전쟁은 강제가 아니라 선택, 시간제·참여형 설계</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">4회 · 탈것 BM 제거</div>
+              <div class="task-item-desc">탈것은 게임 플레이로 획득하는 모험의 보상</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">5회 · 글라이더와 바람길</div>
+              <div class="task-item-desc">나이트크로우1보다 입체적인 이동·전장 합류</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">6회 · 무기외형 천장</div>
+              <div class="task-item-desc">핵심 BM의 허탈감 완화, 확정 도달 시스템 명시</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">7회 · AI 보조 콘텐츠</div>
+              <div class="task-item-desc">파티/길드 결원으로 콘텐츠가 막히지 않도록 설계</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">8회 · WEMIX 직접 거래</div>
+              <div class="task-item-desc">별도 토큰 복잡도 없는 직관적 글로벌 경제</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 3 -->
+      <div class="phase-card">
+        <div class="phase-header">
+          <span class="phase-tag">PHASE 3</span>
+          <div class="phase-title-block">
+            <div class="phase-name">글로벌 사전등록 전환</div>
+            <div class="phase-goal-line">관심 유저를 사전등록으로 전환하고, 런칭 후 운영에 필요한 플레이 성향 데이터 확보</div>
+          </div>
+          <div class="phase-date">2026.10</div>
+        </div>
+        <div class="phase-body">
+          <div class="phase-body-label">실행 과제 6종</div>
+          <div class="task-grid">
+            <div class="task-item">
+              <div class="task-item-name">글로벌 사전등록 오픈</div>
+              <div class="task-item-desc">모바일·PC 동시 메시지로 크로스플랫폼 인식 강화</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">플레이 성향 등록</div>
+              <div class="task-item-desc">솔로 / PvE / 방치 / 거래 / 길드전 / 전쟁 성향을 사전 수집</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">클래스 순차 공개</div>
+              <div class="task-item-desc">4개 초기 클래스 + 8개 전직 구조를 순차 공개해 노출 빈도 확보</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">콘텐츠 상세 소개</div>
+              <div class="task-item-desc">일반 던전·차원의 탑·월영의 성소·파티 던전·길드 던전·성물전·크루세이드</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">사전등록 보상 설계</div>
+              <div class="task-item-desc">외형·편의·초반 성장 지원 중심 (전투력 직결 보상은 지양)</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">Web3 FAQ 공개</div>
+              <div class="task-item-desc">WEMIX 거래·NFT·지갑 연동 등 신규 유저 진입 허들 사전 해소</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 4 -->
+      <div class="phase-card">
+        <div class="phase-header">
+          <span class="phase-tag">PHASE 4</span>
+          <div class="phase-title-block">
+            <div class="phase-name">크리에이터·미디어 프리뷰</div>
+            <div class="phase-goal-line">인플루언서를 통한 사전 붐업 + 길드 사전 생성으로 D0 리텐션 동선 확보</div>
+          </div>
+          <div class="phase-date">2026.10</div>
+        </div>
+        <div class="phase-body">
+          <div class="phase-body-label">Frontier Muster Program (프론티어 집결 프로그램)</div>
+          <div class="task-grid cols-1" style="margin-bottom: 16px;">
+            <div class="task-item">
+              <div class="task-item-name">국가별 인플루언서 → 길드장 임명</div>
+              <div class="task-item-desc">자신의 팬을 모집해 사전에 길드를 만들 수 있게 하는 프로그램. 사전등록 홍보 → 론칭 후 자연스러운 게임 유입 → 인플루언서와 함께 플레이하며 리텐션 확보까지 한 번에 설계</div>
+            </div>
+          </div>
+
+          <div class="phase-body-label">Creator Preview Kit 구성</div>
+          <div class="task-grid">
+            <div class="task-item">
+              <div class="task-item-name">공식 트레일러</div>
+              <div class="task-item-desc">30초 / 60초 두 가지 길이 버전</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">기능별 소개 클립</div>
+              <div class="task-item-desc">방치모드 / PvE 성장 루프 / 글라이더·바람길 전투 / 탈것 인게임 획득 / 무기외형 천장 / AI 용병·파티 보완</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">WEMIX 거래 구조 요약</div>
+              <div class="task-item-desc">크리에이터가 그대로 인용 가능한 정제된 설명 자료</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">BM Trust Charter & Web3 가이드</div>
+              <div class="task-item-desc">금지 표현 가이드와 함께 일관된 메시지 운영</div>
+            </div>
+          </div>
+
+          <ul class="note-list">
+            <li>인플루언서를 통해 최초 공개되는 영상으로 기대감·대세감 형성</li>
+            <li>길드 사전 생성 이벤트 · 공식 프리뷰 영상 · 개발자 코멘터리 · 시스템 소개 자료 · 금지 표현 가이드 일괄 제공</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Phase 5 -->
+      <div class="phase-card">
+        <div class="phase-header">
+          <span class="phase-tag">PHASE 5</span>
+          <div class="phase-title-block">
+            <div class="phase-name">런칭 전환</div>
+            <div class="phase-goal-line">관심을 설치·첫 접속으로 전환하고, 서버·결제·계정·거래소 리스크 최소화</div>
+          </div>
+          <div class="phase-date">2026.11</div>
+        </div>
+        <div class="phase-body">
+          <div class="phase-body-label">실행 과제 5종</div>
+          <div class="task-grid">
+            <div class="task-item">
+              <div class="task-item-name">사전 다운로드</div>
+              <div class="task-item-desc">가능 시 D-2 ~ D-3 시점에 오픈해 D0 트래픽 분산</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">서버/렐름 안내</div>
+              <div class="task-item-desc">지역·언어·혼잡도·추천 서버 정책을 사전 공개</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">런칭 FAQ</div>
+              <div class="task-item-desc">계정·결제·PC/모바일·방치모드·거래소·NFT·WEMIX 통합 정리</div>
+            </div>
+            <div class="task-item">
+              <div class="task-item-name">운영 정책 공개</div>
+              <div class="task-item-desc">봇/작업장·제재·거래 제한·환불·Web3 유의사항 명시</div>
+            </div>
+            <div class="task-item" style="grid-column: 1 / -1;">
+              <div class="task-item-name">런칭 방송 준비</div>
+              <div class="task-item-desc">D0부터 실제 플레이 기반 크리에이터 방송으로 전환해 라이브 검증과 마케팅을 동시 운영</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. BM -->
+    <section class="section" id="s07">
+      <div class="section-head">
+        <span class="section-num">07</span>
+        <h2 class="section-title">BM 전략</h2>
+        <span class="section-sub">Business Model</span>
+      </div>
+      <p class="section-intro">
+        고과금 매출은 유지하되, 중소과금·무과금 유저의 이탈 명분을 줄이는 구조로 설계합니다.
+      </p>
+
+      <div class="dl-table">
+        <div>아바타</div><div>클래스 체인지·외형 과시 핵심. 전투력 격차 메시지는 지양</div>
+        <div>무기외형</div><div>주요 BM. <strong style="color:var(--accent-bright);">천장 시스템 전면 고지</strong>로 허탈감 완화</div>
+        <div>탈것</div><div>BM 제거 유지. 인게임 콘텐츠 보상으로 신뢰 자산화</div>
+        <div>글라이더</div><div>핵심 기능은 인게임 획득, 유료는 외형/편의 중심</div>
+        <div>방치모드</div><div>기본 성장 보장 기능으로 제공. 유료 전용화 시 역풍 가능</div>
+        <div>AI 용병/보완</div><div>콘텐츠 진행 보조. 유료 성능 격차 최소화</div>
+        <div>패스</div><div>PvE 성장 / 전쟁 시즌 / 외형 패스 분리</div>
+        <div>월정액</div><div>편의·가방·제작·거래 보조 중심</div>
+      </div>
+
+      <div class="card" style="margin-top:24px;">
+        <div class="card-title">BM 신뢰 메시지 순서</div>
+        <div class="card-body">
+          <ul class="bullet-list">
+            <li>탈것은 인게임 콘텐츠로 획득</li>
+            <li>무기외형에는 천장 시스템 도입</li>
+            <li>PvE로 핵심 성장 재료 획득 가능</li>
+            <li>방치모드로 기본 성장 손실 완화</li>
+            <li>AI가 파티/길드 콘텐츠 결원을 보완</li>
+            <li>Web3 거래는 선택형 글로벌 기능</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08. 토크노믹스 -->
+    <section class="section" id="s08">
+      <div class="section-head">
+        <span class="section-num">08</span>
+        <h2 class="section-title">토크노믹스 전략</h2>
+        <span class="section-sub">Tokenomics</span>
+      </div>
+
+      <div class="quote-block" style="margin-top:0;">
+        <div class="quote-en">No Extra Game Token Complexity</div>
+        <div class="quote-ko">복잡한 게임 토큰 없이, 아이템 NFT를 WEMIX로 직접 거래하는 직관적 경제</div>
+      </div>
+
+      <div class="dl-table">
+        <div>거래 대상</div><div>아이템 NFT 중심</div>
+        <div>거래 채널</div><div>온라인 웹 거래소</div>
+        <div>결제/거래 단위</div><div>별도 게임 토큰 없이 <strong style="color:var(--accent-bright);">WEMIX 직접 거래</strong></div>
+        <div>커뮤니케이션</div><div>Earn이 아니라 Own / Trade</div>
+        <div>진입 장벽</div><div>복잡한 토큰 스왑·다중 토큰 구조 최소화</div>
+        <div>리스크 관리</div><div>국가별 기능 제한 · KYC/계정 신뢰도 · 봇 탐지 · 거래 제한</div>
+      </div>
+
+      <div class="card" style="margin-top:20px;">
+        <div class="card-title">제한적 NFT 거래소 운영</div>
+        <div class="card-body">
+          <p>런칭 초반에는 봇·작업장·재화 인플레이션·서버 불안정·결제 이슈가 동시에 발생할 수 있습니다. NFT 거래소 아이템을 제한하지 않으면 경제 이슈가 발생할 가능성이 높아, <strong>게임 내 아이템에 대해 제한적으로만 등록 가능</strong>하게 운영합니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09. 콘텐츠 운영 -->
+    <section class="section" id="s09">
+      <div class="section-head">
+        <span class="section-num">09</span>
+        <h2 class="section-title">콘텐츠 운영</h2>
+        <span class="section-sub">Content Operations</span>
+      </div>
+      <p class="section-intro">
+        "많은 콘텐츠"보다 <strong>성장 부담을 낮추는 콘텐츠 구조</strong>를 강조합니다.
+      </p>
+
+      <div class="dl-table-3">
+        <div class="th">콘텐츠</div>
+        <div class="th">역할</div>
+        <div class="th">운영 메시지</div>
+
+        <div class="name">일반 던전</div><div class="desc">안전한 핵심 재료 수급</div><div class="msg">PvP 없이 성장 가능</div>
+        <div class="name">차원의 탑</div><div class="desc">성장 체감, 최고층 도전</div><div class="msg">내 성장 수준을 확인</div>
+        <div class="name">월영의 성소</div><div class="desc">솔로 디펜스, 랭킹</div><div class="msg">숙제가 아닌 선택형 도전</div>
+        <div class="name">파티 던전</div><div class="desc">협동 PvE, AI 보완</div><div class="msg">인원이 부족해도 도전 가능</div>
+        <div class="name">어비스</div><div class="desc">선택형 파티 공략</div><div class="msg">파티원과 선택하고 돌파</div>
+        <div class="name">길드 던전</div><div class="desc">길드 성장</div><div class="msg">함께 도전하고 함께 성장</div>
+        <div class="name">보스 토벌</div><div class="desc">대규모 협동</div><div class="msg">렐름 단위 협력</div>
+        <div class="name">특수 던전</div><div class="desc">고위험 PVPVE</div><div class="msg">원하는 유저만 경쟁</div>
+        <div class="name">성물전</div><div class="desc">스포츠형 길드 PVPVE</div><div class="msg">전략과 역할 분담</div>
+        <div class="name">크루세이드</div><div class="desc">대항해시대 전쟁</div><div class="msg">운영과 선택이 승부를 가름</div>
+      </div>
+
+      <div class="card" style="margin-top:24px;">
+        <div class="card-title">방치모드 운영 원칙</div>
+        <div class="card-body">
+          <ul class="bullet-list">
+            <li>방치모드는 <strong>기본 성장 보장 장치</strong>로 설명</li>
+            <li>직접 플레이 콘텐츠의 보상 효율은 유지</li>
+            <li>방치 보상은 성장 정체를 막는 수준으로 설계</li>
+            <li>고가치 보상은 직접 플레이·파티·길드·도전 콘텐츠와 연결</li>
+            <li>재접속 시 성장 체감 UI 제공</li>
+          </ul>
+          <p style="margin-top:14px; color:var(--accent-bright); font-style:italic;">"접속하지 못한 시간도 성장으로 이어집니다. 하지만 최고의 보상은 직접 도전하는 콘텐츠에서 완성됩니다."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. 리스크 -->
+    <section class="section" id="s10">
+      <div class="section-head">
+        <span class="section-num">10</span>
+        <h2 class="section-title">리스크 & 대응</h2>
+        <span class="section-sub">Risks & Mitigation</span>
+      </div>
+
+      <div class="card" style="padding: 20px 28px;">
+        <div class="risk-item" style="font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:var(--accent); border-bottom:1px solid var(--border);">
+          <div>리스크</div><div>영향</div><div>대응</div>
+        </div>
+        <div class="risk-item">
+          <div class="risk-name">방치모드 → 자동사냥/P2W 인식</div>
+          <div class="risk-impact">글로벌 유저 반감</div>
+          <div class="risk-action">"기본 성장 보장"으로 메시지 제한, 고가치 보상은 직접 플레이 중심</div>
+        </div>
+        <div class="risk-item">
+          <div class="risk-name">저사양 최적화 기대 과장</div>
+          <div class="risk-impact">스토어 평점 하락</div>
+          <div class="risk-action">최소/권장 사양 분리 고지, 지역별 기기 테스트 결과 공개</div>
+        </div>
+        <div class="risk-item">
+          <div class="risk-name">무기외형 BM 논란</div>
+          <div class="risk-impact">P2W 논란</div>
+          <div class="risk-action">천장·마일리지·중복 보상·확정 루트 명확화</div>
+        </div>
+        <div class="risk-item">
+          <div class="risk-name">Web3 수익 기대 과열</div>
+          <div class="risk-impact">규제·정책 리스크</div>
+          <div class="risk-action">Earn 표현 금지, Own/Trade 중심 메시지</div>
+        </div>
+        <div class="risk-item">
+          <div class="risk-name">WEMIX 가격 변동성</div>
+          <div class="risk-impact">경제 불안정</div>
+          <div class="risk-action">대응 방향 고민 필요</div>
+        </div>
+        <div class="risk-item">
+          <div class="risk-name">봇 / 작업장</div>
+          <div class="risk-impact">경제 붕괴</div>
+          <div class="risk-action">계정 신뢰도, 거래 제한, 민팅 지연, 이상 거래 탐지</div>
+        </div>
+        <div class="risk-item">
+          <div class="risk-name">AI가 협동성 약화</div>
+          <div class="risk-impact">커뮤니티 약화</div>
+          <div class="risk-action">AI는 빈자리 보완으로 제한, 최고 보상은 실제 협동 중심</div>
+        </div>
+        <div class="risk-item">
+          <div class="risk-name">선택형 PvP로 전쟁 참여 부족</div>
+          <div class="risk-impact">엔드게임 약화</div>
+          <div class="risk-action">D+30 이후 프리시즌·시즌 보상·길드 목표 강화</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. 매출 시뮬레이션 -->
+    <section class="section" id="s11">
+      <div class="section-head">
+        <span class="section-num">11</span>
+        <h2 class="section-title">매출 시뮬레이션</h2>
+        <span class="section-sub">Revenue Simulation · 30일 KPI</span>
+      </div>
+      <p class="section-intro">
+        나이트크로우 합산 KPI를 벤치마크로 카니발라이제이션·BM 약화·후속작 효과를 반영해 재산정한 시뮬레이션입니다.
+        <strong>NCFT Normal Case는 30일 약 766억</strong>이 합리적인 목표입니다.
+      </p>
+
+      <!-- Scenario Cards -->
+      <div class="subhead">3 시나리오 결과</div>
+      <div class="scenario-grid">
+        <div class="scenario-card">
+          <div class="scenario-label">Conservative</div>
+          <div class="scenario-title">초기 온보딩 부진</div>
+          <div class="scenario-total">536<span style="font-size:18px;">억</span></div>
+          <div class="scenario-total-unit">상품판매 529억 + NFT 7.4억</div>
+          <div class="scenario-metrics">
+            <div class="scenario-metric">DAU<strong>580K</strong></div>
+            <div class="scenario-metric">PUR<strong>3.9%</strong></div>
+            <div class="scenario-metric">ARPPU<strong>78,000원</strong></div>
+            <div class="scenario-metric">ARPDAU<strong>3,042원</strong></div>
+          </div>
+        </div>
+
+        <div class="scenario-card normal">
+          <div class="scenario-label">Normal</div>
+          <div class="scenario-title">보수적 정상화</div>
+          <div class="scenario-total">766<span style="font-size:18px;">억</span></div>
+          <div class="scenario-total-unit">상품판매 754억 + NFT 12.3억</div>
+          <div class="scenario-metrics">
+            <div class="scenario-metric">DAU<strong>680K</strong></div>
+            <div class="scenario-metric">PUR<strong>4.2%</strong></div>
+            <div class="scenario-metric">ARPPU<strong>88,000원</strong></div>
+            <div class="scenario-metric">ARPDAU<strong>3,696원</strong></div>
+          </div>
+        </div>
+
+        <div class="scenario-card">
+          <div class="scenario-label">Upside</div>
+          <div class="scenario-title">거래소·경제 안정화 성공</div>
+          <div class="scenario-total">1,005<span style="font-size:18px;">억</span></div>
+          <div class="scenario-total-unit">상품판매 983억 + NFT 22.2억</div>
+          <div class="scenario-metrics">
+            <div class="scenario-metric">DAU<strong>760K</strong></div>
+            <div class="scenario-metric">PUR<strong>4.4%</strong></div>
+            <div class="scenario-metric">ARPPU<strong>98,000원</strong></div>
+            <div class="scenario-metric">ARPDAU<strong>4,312원</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom: 32px;">
+        <div class="card-title">Normal Case 산식</div>
+        <div class="card-body">
+          <p style="font-family:'Bodoni Moda',serif; font-size:16px; color:var(--accent-bright); line-height:1.8;">
+            680,000 DAU × 30일 × 4.2% PUR × 88,000원 ARPPU = <strong>약 754억</strong> (상품 판매 매출)
+          </p>
+          <p style="font-family:'Bodoni Moda',serif; font-size:16px; color:var(--accent-bright); line-height:1.8;">
+            754억 + NFT 거래소 수수료 12.3억 = <strong>약 766억</strong> (총매출)
+          </p>
+        </div>
+      </div>
+
+      <!-- Benchmark: NC KPI -->
+      <div class="subhead">산정 근거 ① 나이트크로우 30일 KPI 벤치마크</div>
+      <div class="compare-table" style="margin-bottom: 28px;">
+        <div class="compare-row head">
+          <div>구분</div><div>평균 DAU</div><div>30일 매출</div><div>ARPPU</div>
+        </div>
+        <div class="compare-row">
+          <div class="metric">나이트크로우 한국</div>
+          <div class="from">242,273</div>
+          <div class="to">494.8억</div>
+          <div class="delta flat">178,864원</div>
+        </div>
+        <div class="compare-row">
+          <div class="metric">나이트크로우 글로벌</div>
+          <div class="from">555,478</div>
+          <div class="to">814.4억</div>
+          <div class="delta flat">106,872원</div>
+        </div>
+        <div class="compare-row">
+          <div class="metric" style="color:var(--accent-bright);">나이트크로우 합산</div>
+          <div class="from" style="color:var(--accent-bright);">797,751</div>
+          <div class="to">1,309.2억</div>
+          <div class="delta flat" style="color:var(--accent-bright);">126,047원</div>
+        </div>
+      </div>
+
+      <!-- BM Impact -->
+      <div class="subhead">산정 근거 ② NCFT BM 변화에 따른 KPI 영향</div>
+      <div class="bm-impact-wrap" style="margin-bottom: 28px;">
+        <div class="bm-impact-row head">
+          <div>BM 변화 항목</div><div>영향 방향</div><div>KPI 영향</div>
+        </div>
+        <div class="bm-impact-row">
+          <div class="item-name">탈것 BM 약화</div>
+          <div class="item-impact">고과금 소비처 일부 감소</div>
+          <div class="item-kpi">ARPPU ↓</div>
+        </div>
+        <div class="bm-impact-row">
+          <div class="item-name">플레이 획득형 구조</div>
+          <div class="item-impact">결제 필요성 완화</div>
+          <div class="item-kpi">PUR 소폭 ↓</div>
+        </div>
+        <div class="bm-impact-row">
+          <div class="item-name">후속작 효과</div>
+          <div class="item-impact">초기 관심·유입 확보</div>
+          <div class="item-kpi">DAU 방어</div>
+        </div>
+        <div class="bm-impact-row">
+          <div class="item-name">MMORPG 성장 구조</div>
+          <div class="item-impact">장비·강화·패키지 소비 유지</div>
+          <div class="item-kpi">ARPPU 하단 방어</div>
+        </div>
+        <div class="bm-impact-row">
+          <div class="item-name">NFT 거래소</div>
+          <div class="item-impact">상품판매 외 보조 매출</div>
+          <div class="item-kpi">총매출 일부 보완</div>
+        </div>
+      </div>
+
+      <!-- ARPPU Re-validation -->
+      <div class="subhead">산정 근거 ③ ARPPU 재검증</div>
+      <p style="font-size:14px; color:var(--text-secondary); margin-bottom: 14px; line-height: 1.7;">
+        기존 5.5만~6.5만원 수준은 과도하게 보수적입니다. NCFT는 나이트크로우 후속 MMORPG이므로
+        레전드오브이미르 수준까지 떨어지지 않고 <strong style="color:var(--accent-bright);">7.8만~9.8만원 구간</strong>이 합리적입니다.
+      </p>
+      <div class="arppu-chart" style="margin-bottom: 28px;">
+        <div class="arppu-bar">
+          <div class="arppu-name">나이트크로우 합산</div>
+          <div class="arppu-track"><div class="arppu-fill" style="width: 100%;"></div></div>
+          <div class="arppu-value">126,047원</div>
+        </div>
+        <div class="arppu-bar">
+          <div class="arppu-name highlight">NCFT Upside</div>
+          <div class="arppu-track"><div class="arppu-fill scenario" style="width: 77.7%;"></div></div>
+          <div class="arppu-value highlight">98,000원</div>
+        </div>
+        <div class="arppu-bar">
+          <div class="arppu-name highlight">NCFT Normal</div>
+          <div class="arppu-track"><div class="arppu-fill scenario" style="width: 69.8%;"></div></div>
+          <div class="arppu-value highlight">88,000원</div>
+        </div>
+        <div class="arppu-bar">
+          <div class="arppu-name highlight">NCFT Conservative</div>
+          <div class="arppu-track"><div class="arppu-fill scenario" style="width: 61.9%;"></div></div>
+          <div class="arppu-value highlight">78,000원</div>
+        </div>
+        <div class="arppu-bar">
+          <div class="arppu-name">레전드오브이미르 GL</div>
+          <div class="arppu-track"><div class="arppu-fill muted" style="width: 29.9%;"></div></div>
+          <div class="arppu-value">37,702원</div>
+        </div>
+      </div>
+
+      <!-- NC Sum vs NCFT Normal Comparison -->
+      <div class="subhead">나이트크로우 합산 vs NCFT Normal 변화 매트릭스</div>
+      <div class="compare-table" style="margin-bottom: 28px;">
+        <div class="compare-row head">
+          <div>항목</div><div>NC 합산</div><div>NCFT Normal</div><div>차이</div>
+        </div>
+        <div class="compare-row">
+          <div class="metric">평균 DAU</div>
+          <div class="from">797,751</div>
+          <div class="to">680,000</div>
+          <div class="delta down">−14.8%</div>
+        </div>
+        <div class="compare-row">
+          <div class="metric">PUR</div>
+          <div class="from">4.34%</div>
+          <div class="to">4.20%</div>
+          <div class="delta down">−0.14%p</div>
+        </div>
+        <div class="compare-row">
+          <div class="metric">ARPPU</div>
+          <div class="from">126,047원</div>
+          <div class="to">88,000원</div>
+          <div class="delta down">−30.2%</div>
+        </div>
+        <div class="compare-row">
+          <div class="metric">ARPDAU</div>
+          <div class="from">5,471원</div>
+          <div class="to">3,696원</div>
+          <div class="delta down">−32.4%</div>
+        </div>
+        <div class="compare-row">
+          <div class="metric">상품판매 매출</div>
+          <div class="from">약 1,309억</div>
+          <div class="to">약 754억</div>
+          <div class="delta down">−42.4%</div>
+        </div>
+        <div class="compare-row">
+          <div class="metric">NFT 거래소 수수료</div>
+          <div class="from">—</div>
+          <div class="to">약 12.3억</div>
+          <div class="delta up">신규</div>
+        </div>
+        <div class="compare-row" style="background:var(--accent-soft);">
+          <div class="metric" style="color:var(--accent-bright);">총매출</div>
+          <div class="from" style="color:var(--accent-bright);">약 1,309억</div>
+          <div class="to">약 766억</div>
+          <div class="delta down">−41.5%</div>
+        </div>
+      </div>
+
+      <!-- Country Target -->
+      <div class="subhead">국가별 NCFT Normal 목표 매출 (상품 판매 기준)</div>
+      <div class="country-target" style="margin-bottom: 12px;">
+        <div class="country-target-row head">
+          <div>국가</div><div>NC 30일 실제</div><div>NCFT Normal</div><div>조정 논리</div>
+        </div>
+        <div class="country-target-row">
+          <div class="ct-country">한국</div>
+          <div class="ct-from">494.8억</div>
+          <div class="ct-to">150억</div>
+          <div class="ct-logic">카니발 강함. 단 안정 Core 유지</div>
+        </div>
+        <div class="country-target-row">
+          <div class="ct-country">태국</div>
+          <div class="ct-from">240.8억</div>
+          <div class="ct-to">168억</div>
+          <div class="ct-logic">고효율 Core. 카니발 반영 후에도 강하게 유지</div>
+        </div>
+        <div class="country-target-row">
+          <div class="ct-country">대만</div>
+          <div class="ct-from">138.7억</div>
+          <div class="ct-to">134억</div>
+          <div class="ct-logic">한국형 MMORPG 적합도 높아 높은 목표 유지</div>
+        </div>
+        <div class="country-target-row">
+          <div class="ct-country">필리핀</div>
+          <div class="ct-from">95.0억</div>
+          <div class="ct-to">85억</div>
+          <div class="ct-logic">DAU 기반 + NFT 거래소 보조</div>
+        </div>
+        <div class="country-target-row">
+          <div class="ct-country">브라질</div>
+          <div class="ct-from">61.3억</div>
+          <div class="ct-to">65억</div>
+          <div class="ct-logic">기존 성과 + Web3/NFT 성장성 반영</div>
+        </div>
+        <div class="country-target-row">
+          <div class="ct-country">미국</div>
+          <div class="ct-from">46.7억</div>
+          <div class="ct-to">30억</div>
+          <div class="ct-logic">고ARPU 가능성은 있으나 기존 실적 대비 보수</div>
+        </div>
+        <div class="country-target-row">
+          <div class="ct-country">홍콩</div>
+          <div class="ct-from">58.3억</div>
+          <div class="ct-to">25억</div>
+          <div class="ct-logic">작업장/우회 IP 노이즈 반영해 보수 산정</div>
+        </div>
+        <div class="country-target-row">
+          <div class="ct-country">인도네시아</div>
+          <div class="ct-from">31.5억</div>
+          <div class="ct-to">25억</div>
+          <div class="ct-logic">DAU는 가능하나 과금력은 보수 반영</div>
+        </div>
+        <div class="country-target-row">
+          <div class="ct-country">기타</div>
+          <div class="ct-from">142.0억</div>
+          <div class="ct-to">72억</div>
+          <div class="ct-logic">롱테일 보완</div>
+        </div>
+        <div class="country-target-row total">
+          <div class="ct-country">합계 (상품판매)</div>
+          <div class="ct-from">약 1,309억</div>
+          <div class="ct-to" style="color:var(--accent-bright);">약 754억</div>
+          <div class="ct-logic">+ NFT 수수료 12.3억 = 총 766억</div>
+        </div>
+      </div>
+
+      <!-- NFT Fee Assumption -->
+      <div class="subhead">NFT 거래소 수수료 가정 (수수료율 18.49%)</div>
+      <div class="grid-3" style="margin-bottom: 28px;">
+        <div class="card" style="padding: 22px;">
+          <div style="font-family:'Bodoni Moda',serif; font-size:12px; letter-spacing:0.2em; color:var(--text-muted); text-transform:uppercase; margin-bottom: 8px;">Conservative · 5%</div>
+          <div style="font-family:'Bodoni Moda',serif; font-size:26px; color:var(--accent-bright); font-weight:600; margin-bottom: 5px;">7.4억</div>
+          <div style="font-size:13px; color:var(--text-secondary);">초기 온보딩 부진</div>
+        </div>
+        <div class="card" style="padding: 22px; border-color: var(--accent-line);">
+          <div style="font-family:'Bodoni Moda',serif; font-size:12px; letter-spacing:0.2em; color:var(--accent); text-transform:uppercase; margin-bottom: 8px;">Normal · 10%</div>
+          <div style="font-family:'Bodoni Moda',serif; font-size:26px; color:var(--accent-bright); font-weight:600; margin-bottom: 5px;">12.3억</div>
+          <div style="font-size:13px; color:var(--text-secondary);">보수적 정상화</div>
+        </div>
+        <div class="card" style="padding: 22px;">
+          <div style="font-family:'Bodoni Moda',serif; font-size:12px; letter-spacing:0.2em; color:var(--text-muted); text-transform:uppercase; margin-bottom: 8px;">Upside · 15%</div>
+          <div style="font-family:'Bodoni Moda',serif; font-size:26px; color:var(--accent-bright); font-weight:600; margin-bottom: 5px;">22.2억</div>
+          <div style="font-size:13px; color:var(--text-secondary);">거래소·경제 안정화 성공</div>
+        </div>
+      </div>
+      <p style="font-size:13.5px; color:var(--text-secondary); margin-bottom: 28px; line-height: 1.75;">
+        NFT 거래소는 상품 판매를 대체하는 매출 축이 아니라 초기에는 보조 수익으로 봅니다.
+        작업장 덤핑·우회 IP 리스크가 존재하므로 거래 가능 아이템·쿨다운·계정 신뢰도 기반 한도 설계가 필요합니다.
+      </p>
+
+      <!-- Final Conclusion -->
+      <div class="conclusion-box">
+        <div class="conclusion-label">최종 한 줄</div>
+        <div class="conclusion-text">
+          NCFT는 나이트크로우 대비 카니발과 BM 약화로 <strong>ARPPU가 약 30% 하락</strong>하더라도,
+          후속작 효과로 <strong>DAU 68만 수준</strong>을 확보하면 서비스 첫 30일
+          <strong>약 760억대 중반 매출</strong>까지 현실적으로 시뮬레이션 가능합니다.
+        </div>
+      </div>
+
+      <!-- PDF Reference -->
+      <div class="pdf-ref-card">
+        <div class="pdf-ref-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        </div>
+        <div class="pdf-ref-text">
+          <div class="pdf-ref-text-title">NCFT 글로벌 론칭 30일 매출 시뮬레이션 — 원본 PDF</div>
+          <div class="pdf-ref-text-sub">상세 산식·국가별 가정·리스크 가정 전체 보기</div>
+        </div>
+        <div class="pdf-ref-actions">
+          <button class="pdf-btn primary" onclick="openPdfModal()">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            인라인 보기
+          </button>
+          <a class="pdf-btn" href="NCFT_KPI_Simulation_260430.pdf" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            새 탭 열기
+          </a>
+          <a class="pdf-btn" href="NCFT_KPI_Simulation_260430.pdf" download>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            다운로드
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. 최종 요약 -->
+    <section class="section" id="s12">
+      <div class="section-head">
+        <span class="section-num">12</span>
+        <h2 class="section-title">최종 사업 전략 요약</h2>
+        <span class="section-sub">Final Summary</span>
+      </div>
+
+      <div class="quote-block" style="margin-top:0;">
+        <div class="quote-ko" style="font-size:16px; color:var(--text-primary); line-height:1.7;">
+          나이트 크로우 프론티어는 나이트크로우1의 <strong style="color:var(--accent-bright);">전쟁·글라이더·Web3 경제</strong>를 계승하되,
+          <strong style="color:var(--accent-bright);">방치모드·보장형 PvE·선택형 PvP·인게임 탈것·무기외형 천장·AI 보조·WEMIX 직접 거래</strong>를 통해
+          성장 부담과 토크노믹스 진입 장벽을 낮춘 글로벌 MMORPG로 론칭해야 한다.
+        </div>
+      </div>
+
+      <div class="subhead" style="margin-top: 32px;">핵심 차별화 매트릭스</div>
+      <div class="dl-table">
+        <div>성장</div><div>방치모드 + 보장형 PvE + 확정 성장 루트</div>
+        <div>전쟁</div><div>선택형 PvP + 성물전 + 크루세이드</div>
+        <div>이동/전투</div><div>글라이더 + 바람길로 입체적 전장 제공</div>
+        <div>BM</div><div>탈것 BM 제거 + 무기외형 천장</div>
+        <div>편의</div><div>AI로 파티/길드 콘텐츠 허들 완화</div>
+        <div>글로벌</div><div>웹 거래소 + 아이템 NFT + WEMIX 직접 거래</div>
+        <div>포지션</div><div>24시간 성장 가능한 선택형 전쟁 MMORPG</div>
+      </div>
+
+      <div class="hero-tagline" style="margin-top: 32px;">
+        <div class="hero-tagline-en">NIGHT CROW FRONTIER<br>Grow Anytime. Fight by Choice. Own What You Build.</div>
+        <div>언제든 성장하고, 원할 때 전쟁하며, 내가 만든 가치를 소유하라.</div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      NCF Business Strategy Briefing · Based on NCF_Business_Strategy_1-14_Full_v1
+    </footer>
+
+  </main>
+</div>
+
+<!-- PDF Modal -->
+<div class="pdf-modal" id="pdfModal" onclick="if(event.target===this)closePdfModal()">
+  <div class="pdf-modal-content">
+    <div class="pdf-modal-header">
+      <div class="pdf-modal-title">
+        <span class="pdf-modal-title-mark">REFERENCE</span>
+        NCFT 글로벌 론칭 30일 매출 시뮬레이션
+      </div>
+      <div class="pdf-modal-actions">
+        <a class="pdf-btn" href="NCFT_KPI_Simulation_260430.pdf" target="_blank" rel="noopener">새 탭 열기</a>
+        <a class="pdf-btn" href="NCFT_KPI_Simulation_260430.pdf" download>다운로드</a>
+        <button class="pdf-modal-close" onclick="closePdfModal()" aria-label="닫기">×</button>
+      </div>
+    </div>
+    <iframe id="pdfFrame" class="pdf-modal-iframe" title="NCFT KPI Simulation"></iframe>
+  </div>
+</div>
+
+<script>
+function openPdfModal() {
+  var modal = document.getElementById('pdfModal');
+  var frame = document.getElementById('pdfFrame');
+  // 처음 열릴 때만 src 주입 → 메모리/네트워크 절약
+  if (!frame.src) {
+    frame.src = 'NCFT_KPI_Simulation_260430.pdf';
+  }
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closePdfModal() {
+  document.getElementById('pdfModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+// ESC로 닫기
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closePdfModal();
+});
+</script>
+
+</body>
+</html>
